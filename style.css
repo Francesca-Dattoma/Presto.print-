@@ -1,0 +1,103 @@
+:root {
+
+    --primary : #ed6a5a;
+    --secondary : rgb(244, 241, 187);
+    --accent : rgb(155, 193, 188);
+    --last : rgb(92, 164, 169);
+
+    --whiteCustom : #FEFEFE ;
+    --blackCustom : #272626;
+
+}
+
+*{
+
+    font-family:'Fira Sans', sans-serif;
+}
+
+h1, h2, h3{
+
+    font-family:  'Poppins', sans-serif;
+
+
+}
+
+.text-primaryC{
+
+    color : var(--primary);
+}
+
+.text-secondaryC{
+
+    color : var(--secondary);
+}
+
+.text-accentC{
+
+    color : var(--accent);
+}
+
+.text-lastC{
+
+    color : var(--last);
+}
+
+.text-whiteC{
+
+    color: var(--whiteCustom);
+
+}
+
+.text-blackC{
+
+    color: var(--blackCustom);
+
+}
+
+.background-accentC{
+
+    background-color: var(--accent);
+}
+
+body{
+
+    background-color: var(--accent);
+
+}
+/*sezione navbar*/
+
+.nav-custom{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoPN-custom{
+
+    filter: var(--accent);
+    width: 25px;
+    
+}
+
+/*sezione header*/
+.header-custom{
+
+    background: linear-gradient(rgba(159, 158, 137, 0.308), rgba(173, 212, 207, 0.5)), url(./media/header.jpg) ;
+    background-size: cover ;
+    background-position: center;
+    
+
+}
+
+.shadow-custom{
+
+    text-shadow: 2px 2px 4px rgb(244, 241, 187); 
+}
+    
+
+/*sezione swiper*/
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }

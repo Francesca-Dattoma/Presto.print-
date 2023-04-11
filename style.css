@@ -1,6 +1,6 @@
 :root {
 
-    --primary : #ed6a5a;
+    --primary : rgb(237, 106, 90);
     --secondary : rgb(244, 241, 187);
     --accent : rgb(155, 193, 188);
     --last : rgb(92, 164, 169);
@@ -54,9 +54,9 @@ h1, h2, h3{
 
 }
 
-.background-accentC{
+.background-lastC{
 
-    background-color: var(--accent);
+    background-color: var(--last);
 }
 
 body{
@@ -82,7 +82,7 @@ body{
 /*sezione header*/
 .header-custom{
 
-    background: linear-gradient(rgba(159, 158, 137, 0.308), rgba(173, 212, 207, 0.5)), url(./media/header.jpg) ;
+    background: linear-gradient(rgba(159, 158, 137, 0.308), rgba(173, 212, 207, 0.5)), url(./media/polaroid.jpg) ;
     background-size: cover ;
     background-position: center;
     
@@ -93,11 +93,22 @@ body{
 
     text-shadow: 2px 2px 4px rgb(244, 241, 187); 
 }
+
+
+.title-custom {
+
+    display: flex;
+	 align-content: center;
+     align-items: center;
+	 height: 200px;
+	text-align: center;
+}
+
     
 
 /*sezione swiper*/
 
-.mySwiper{
+.swiper-custom{
 
     position: relative;
     height: 450px;
@@ -105,39 +116,105 @@ body{
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 
-.swiper-slide {
+.slide-custom {
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-direction: column;
-
-
+    
     border-radius: 18px;
     font-size: 22px;
     font-weight: bold;
-    color: #fff;
+    color: var(--blackCustom);
+
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   }
 
-.swiper-slide:nth-child(1n) {
+ 
+
+.slide-custom:nth-child(1n) {
     background-color: var(--primary);
-  }
+    opacity: 0.9;
 
-.swiper-slide:nth-child(2n) {
-    background-color: var(--secondary);
-  }
-
-.swiper-slide:nth-child(3n) {
-    background-color: var(--last);
-  }
-
-.slide-img{
-   
     
-    height: 150px;
-    width: 200px;
+  }
+
+ .slide-custom:nth-child(1n):hover{
+    
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+      
+  }
+
+
+.slide-custom:nth-child(2n) {
+    background-color: var(--secondary);
+    opacity: 0.9.5;
+  }
+
+.slide-custom:nth-child(2n):hover{
+    
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  
+}
+
+.slide-custom:nth-child(3n) {
+    background-color: var(--last);
+    opacity: 0.9.5;
+  }
+
+  .slide-custom:nth-child(3n):hover{
+    
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.313);
+  
+}
+
+.sliderBtn{
+
+    
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background-image: linear-gradient(to right,#e052a0,#f15c41)!important;
+    border-radius: 10px;
+    padding: 16px 18px 15px;
+    white-space: nowrap;
+
+    
+    
+
+}
+
+.sliderBtn:hover {
+        background-color: #e6375a;
+        background-image: none!important;
+    }
+    
+/* immagine accanto swiper*/
+
+.img-custom{
+
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+/*sezione counter*/
+
+.counter-custom{
+
+    margin-top: 80px;
+    text-align: center;
 }

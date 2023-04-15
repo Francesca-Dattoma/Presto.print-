@@ -7,8 +7,8 @@
     <link rel="shortcut icon" src="./media/logoB.png" type="image/x-icon">
 
 
-   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <!-- Link Swiper's CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 
     <!--aos-->
@@ -32,29 +32,40 @@
 </head>
   <body>
     
-    <!--inizio navbar-->
+   <!--inizio navbar-->
 
-    <nav id="mainNavbar" class="navbar navbar-expand-lg bg-transparent fixed-top">
-        <div class="container-fluid nav-custom">
+   <nav id="mainNavbar" class="navbar navbar-expand-lg bg-transparent fixed-top">
+    <div class="container-fluid">
+
         <img class="logoPN-custom m-3" src="./media/logoB.png">
-
-          <a class="navbar-brand text-secondaryC" href="#">Presto.Print</a>
-            
-            
-            <!--menu-->         
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand text-secondaryC" href="#">Presto.Print</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link text-secondaryC" aria-current="page" href="#">Home</a>
-              <a class="nav-link text-secondaryC" href="#">Galleria</a>
-              <a class="nav-link text-secondaryC" href="#">Prezzi</a>
-              
-            </div>
-          </div>
-        </div>
-      </nav>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link text-secondaryC" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-secondaryC" href="#">Galleria</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-secondaryC" href="#">Prezzi</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 bg-transparent" type="search" placeholder="Cerca" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Cerca</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
     <!--fine navbar-->
 
@@ -124,33 +135,121 @@
 
     <!--inizio sezione counter-->
 
-    <section class="container">
-      <div class="row mt-5">
-        <div class="col-12 col-md-8">
-          <h2 class="display-3 text-center counter-custom">Un pò di numeri</h2>
+    <section class="container-fluid">
+      <div class="row counter-custom mt-5">
+        <div class="col-12">
+          <h2 class="display-3 ">Un pò di numeri</h2>
 
-          <p>Clienti soddisfatti</p>
-          <p>Consegne effettuate</p>
-          <p>Prodotti venduti</p>
+          <p><span id="first-span" class="increment-numbers">0</span >Clienti soddisfatti</p>
+          <p><span id="second-span" class="increment-numbers">0</span> Consegne effettuate</p>
+          <p><span id="third-span" class="increment-numbers">0</span> Prodotti venduti</p>
           
-
-              
-
-
-
         </div>
 
 
+      </div>
+    </section>
+
+    <!--fine sezione counter-->
+
+    <!--sezione cards-->
+
+    <section class="container-fluid background-lastC my-5 py-5">
+        <div class="container">
+            <div class="row justify-content-evenly">
+
+            <!--card 1-->
+
+              <div class="col-12 col-md-3 card-custom">
+                <i id="icone" class="fa-solid fa-camera fa-2x m-2 text-primaryC"></i>
+
+              <h3 class="text-center">Scatta il tuo momento</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam tenetur repudiandae voluptas maxime vel 
+                  soluta harum libero similique.</p>
+              </div>
 
 
+            <!--card 2-->
+
+              <div class="col-12 col-md-3 card-custom">
+                <i id="icone" class="fa-solid fa-images fa-2x m-2 text-primaryC"></i>
+
+                <h3 class="text-center">Scegli il formato più adatto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam tenetur repudiandae voluptas maxime vel 
+                  soluta harum libero similique.</p>
+
+              </div>
+
+                <!--card 3-->
+
+              <div class="col-12 col-md-3 card-custom">
+                <i id="icone" class="fa-solid fa-truck-fast fa-2x m-2 text-primaryC"></i>
+
+                <h3 class="text-center">Ricevilo a casa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam tenetur repudiandae voluptas maxime vel 
+                  soluta harum libero similique.</p>
+
+              </div>
+
+
+
+
+
+            </div>
+        </div>
+      </section>
+
+    <!--fine sezione cards-->
+
+    <!--footer-->
+
+    <footer class="container-fluid mt-5 py-5 background-primaryC text-blackC">
+      <div class="row">
+        <div class="col-12 col-md-4 my-3 text-center">
+
+          <h4 class="text-secondaryC">About Presto.Print</h4>
+          <p> P.IVA: 7416232</p>
+          <p> Email: ass.tec@presoprint.it</p>
+
+
+          <div class="d-flex justify-content-center">
+          <i class="fa-brands fa-facebook fa-1x"></i>
+          <i class="fa-brands fa-instagram mx-3 fa-1x"></i>
+          <i class="fa-brands fa-linkedin fa-1x"></i>
+
+        </div>
+
+        </div>
+
+        <div class="col-12 col-md-4 text-center my-3">
+
+          <h4 class="text-secondaryC">Quick Menu</h4>
+          <a href="#animate" class="footer-link"><p>Un pò di numeri</p></a>
+          <a href="#aboutUs" class="footer-link"><p>Recensioni</p></a>
+          <a href="#mouseEnter" class="footer-link"><p>Spedizioni</p></a>
+          
+        </div>
+
+
+        <div class="col-12 col-md-4 text-center my-3">
+
+          <h4 class="text-secondaryC">Collaborazioni</h4>
+          <p>Aulab</p>
+          <p>Bartolini</p>
+          <p>Amazon</p>
+          <p>Disney</p> 
+        
+        </div>
+
+
+        
       </div>
 
 
 
+    </footer>
 
-    </section>
-
-    <!--fine sezione recensioni-->
+    <!--fine footer-->
 
    
     <!--js bootstrap-->
@@ -168,23 +267,21 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
-
-
-    <!--js interno-->
-     
-
     <!-- Initialize Swiper -->
   <script>
     const swiper = new Swiper(".mySwiper", {
       effect: "cards",
       grabCursor: true,
 
-      loop: true,
+      // loop: true,
       
     });
   </script>
 
+<!--js interno-->
+<script src="./main.js">
 
+</script>
   
   </body>
 

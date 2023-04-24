@@ -1,8 +1,8 @@
 :root {
 
     --primary : rgb(237, 106, 90);
-    --secondary : rgb(244, 241, 187);
-    --accent : rgb(155, 193, 188);
+    --secondary : #f4f1bb;
+    --accent : #9bc1bc;
     --last : #5ca4a9;
 
     --whiteCustom : #FEFEFE ;
@@ -90,15 +90,43 @@ body{
     
 }
 
+
+
+.btn-custom{
+
+    background-color: var(--accent);
+    color: var(--secondary);
+
+}
+
+.btn-custom:hover{
+
+    background-color: var(--primary);
+    color: var(--blackCustom);
+
+    background-image: linear-gradient(#5ca4a9,#1095c1e8);
+    transform: scale(1);
+
+}
+
+#brushIcon{
+
+    transition: 0.5s;
+}
+
 /*sezione header*/
 .header-custom{
 
     background: linear-gradient(rgba(159, 158, 137, 0.308), rgba(173, 212, 207, 0.5)), url(./media/polaroid.jpg) ;
     background-size: cover ;
-    background-position: center;
+    background-position: left;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
     
-
+    
 }
+
+
 
 .shadow-custom{
 
@@ -109,6 +137,7 @@ body{
 .title-custom {
 
     display: flex;
+    justify-content: center;
 	 align-content: center;
      align-items: center;
 	 height: 200px;
@@ -119,15 +148,31 @@ body{
 
 /*sezione swiper*/
 
+    
+
 .swiper-custom{
 
-    position: relative;
     height: 450px;
     width: 600px;
 
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center; 
+
+    
+    
+}
+
+@media screen and (max-width:900){
+
+    .swiper-custom{
+
+        height: 300px;
+        width: 250px;
+        margin-right: 80px;
+    }
+    
 }
 
 
@@ -137,9 +182,12 @@ body{
     justify-content: center;
     flex-direction: column;
     
+    /* height: 450px;
+    width: 100px; */
+    
     border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
+    /* font-size: 22px;
+    font-weight: bold; */
     color: var(--blackCustom);
 
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -150,6 +198,7 @@ body{
 .slide-custom:nth-child(1n) {
     background-color: var(--primary);
     opacity: 0.9;
+
     
 
     
@@ -159,6 +208,8 @@ body{
     
         transform: translateY(-5px);
         box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+
+        
       
   }
 
@@ -166,6 +217,8 @@ body{
 .slide-custom:nth-child(2n) {
     background-color: var(--secondary);
     opacity: 0.9.5;
+
+    margin-right: 50px;
   }
 
 .slide-custom:nth-child(2n):hover{
@@ -223,6 +276,17 @@ body{
 
 }
 
+
+@media screen and (max-width: 900px){
+
+    .img-custom{
+        
+        width: 300px;
+        height: 200px;
+    }
+
+
+}
 /*sezione counter*/
 
 .counter-custom{
@@ -270,3 +334,207 @@ body{
     transform: scale(1);
     
 }
+
+/*footer*/
+
+.footer-link{
+
+    text-decoration: none;
+    color: var(--blackCustom);
+
+}
+
+.footer-link:hover{
+
+    color: var(--last);
+
+}
+
+/*cards ispirazioni*/
+
+.announcement-card{
+
+    min-height: 300px;
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+   
+    background: rgb(242,234,234);
+    background: linear-gradient(90deg, rgba(242,234,234,1) 0%, rgba(237,107,90,0.6867997198879552) 0%);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center ;
+}
+
+
+
+/*custom sezione a sx dell'accordion : categoria, prezzo, parola */
+.accordion {
+    --bs-accordion-color: var(--secondary);
+        
+    --bs-accordion-bg: var(--last);
+        
+    --bs-accordion-border-color: var(--last);
+
+    --bs-accordion-btn-color: var(--blackCustom);
+    
+   
+   
+}
+
+
+.accordion-button:not(.collapsed){
+
+    background: var(--last);
+    color: var(--primary);
+
+}
+
+.accordion-button:not(.collapsed)::after {
+
+    filter: brightness(0%) invert(40%);
+
+}
+
+.accordion-button:focus {
+
+    box-shadow: inherit;
+}
+
+/*custom radio button nella sezione "categoria"*/
+
+.form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    
+
+}
+
+.form-check .form-check-input {
+    float: inherit;
+    margin-left: 2.5em;
+}
+
+/*custom cursore nella sezione "prezzo" */
+.form-range {
+    width: auto;
+    height: 1.5rem;
+    padding: 0;
+    background-color: transparent;
+}
+
+
+.form-range::-webkit-slider-thumb {
+
+    background: var(--primary);
+    
+}
+
+.form-range::-ms-thumb:focus{
+
+    box-shadow: inherit;
+}
+.form-range::-moz-range-thumb{
+
+    background: var(--primary);
+}
+
+.form-range::-ms-thumb{
+
+    background: var(--primary);
+}
+
+.form-range::-webkit-slider-thumb:active{
+
+    background-color: var(--primary);
+}
+
+/*numeri sotto cursore prezzo*/
+.inputNumber{
+
+    color: var(--secondary);
+    font-size: 20px;;
+    font-weight: 700;
+}
+
+
+/*lorem piscum*/
+
+.img-card-custom {
+
+    height: 120px;
+    width: 120px;
+    background-color: var(--last);
+    
+    border: 1px solid #ddd;
+    border-radius: 75px;
+    padding: 5px;
+  
+}
+
+
+.img-card-custom:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    background-color: var(--secondary);
+  }
+
+
+  /*sezione benevbut0 */
+
+  .circle{
+
+    height:300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 2px dashed var(--primary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .opener{
+
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 3px solid var(--last);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    z-index: 1;
+    background-color: var(--secondary);
+
+    cursor: pointer;
+
+
+  }
+
+  .opener:hover{
+
+    background-color: var(--last);
+  }
+
+  .moved {
+
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 3px solid var(--last);
+
+   position: absolute;
+
+    background-color: #272626;
+
+    
+    
+
+    transform: translate(200px);
+    transition: 1s;
+  }

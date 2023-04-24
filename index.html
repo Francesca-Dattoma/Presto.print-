@@ -34,35 +34,43 @@
     
    <!--inizio navbar-->
 
-   <nav id="mainNavbar" class="navbar navbar-expand-lg bg-transparent fixed-top">
-    <div class="container-fluid">
+   <nav id="mainNavbar" class="navbar navbar-expand-md fixed-top">
 
-        <img class="logoPN-custom m-3" src="./media/logoB.png">
-        <a class="navbar-brand text-secondaryC" href="#">Presto.Print</a>
+    <div class="container-fluid">   
+
+        
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-file-powerpoint fa-2x text-primaryC"></i>
+          </a>
+      <!--btn menu-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+            <i class="fa-solid fa-brush fa-rotate-180 fa-2x text-primaryC" id="brushIcon"></i>
+
           </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-          <li class="nav-item">
+            <li class="nav-item">
             <a class="nav-link text-secondaryC" aria-current="page" href="#">Home</a>
-          </li>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link text-secondaryC" href="#">Galleria</a>
-          </li>
+            <li class="nav-item">
+            <a class="nav-link text-secondaryC" href="./ispirazioni.html">Ispirazioni</a>
+            </li>
 
-          <li class="nav-item">
+            <li class="nav-item">
             <a class="nav-link text-secondaryC" href="#">Prezzi</a>
-          </li>
+            </li>
 
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2 bg-transparent" type="search" placeholder="Cerca" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Cerca</button>
-        </form>
+        <!-- <form class=" carca-custom" role="search">
+          <input class="form-control bg-transparent p-2" type="search" placeholder="Cerca" aria-label="Search">
+          <button class="btn btn-custom" type="submit">Cerca</button>
+        </form> -->
+
+        
       </div>
     </div>
   </nav>
@@ -76,7 +84,7 @@
         <div class="row vh-100 header-custom title-custom">
             
 
-            <div class="col-12  pt-5">
+            <div class="col-12 col-md-8 pt-5">
               <h1 data-aos="zoom-in-down" class="fw-bold text-blackC display-1 shadow-custom"><span class="text-primaryC">Presto.</span>Print</h1>
 
             </div>
@@ -89,25 +97,23 @@
 
     <!--inzio swiper-->
 
-    <section class="container">
+     <section id="Informazioni" class="container">
 
-        <div class="row justify-content-center">
+        <div class="row">
           <h2 class=" display-3 text-center m-5">Diamo forma alla tua arte!</h2>
 
 
-          <div class="col-12 col-md-4">
+         <div class="col-12 col-md-4">
               <img class="img-custom" src="./media/blonde.jpg">
           </div>
-
-
-
-          <div class="col-12 col-md-8 mt-5">
+              
+          <div class="col-12 col-md-6 mr-5">
 
             <!--slider main container-->
-            <div class="swiper mySwiper swiper-custom">
-              <div class="swiper-wrapper">
+             <div class="swiper mySwiper swiper-custom">
+              <div class="swiper-wrapper ">
 
-                <div class="swiper-slide slide-custom  text-center p-5">
+                <div class="swiper-slide slide-custom  text-center mt-5 p-5">
                   <h2>Approfitta dell'offerta di benvenuto!</h2>
                   <button type="button" class="sliderBtn mt-5">Scopri</button>
                 </div>
@@ -117,7 +123,7 @@
                   <button type="button" class="sliderBtn mt-5">Scopri</button>
                 </div>
 
-                <div class="swiper-slide slide-custom p-5">
+                <div class="swiper-slide slide-custom text-center p-5">
                   <h2>Lasciati ispirare!</h2>
                   <button type="button" class="sliderBtn mt-5">Scopri</button>
                 </div>
@@ -129,7 +135,7 @@
           
 
         </div>
-    </section>
+    </section> 
 
     <!--fine swiper-->
 
@@ -138,7 +144,7 @@
     <section class="container-fluid">
       <div class="row counter-custom mt-5">
         <div class="col-12">
-          <h2 class="display-3 ">Un pò di numeri</h2>
+          <h2 id="aboutUs"  class="display-3 mt-5 ">Un pò di numeri</h2>
 
           <p><span id="first-span" class="increment-numbers">0</span >Clienti soddisfatti</p>
           <p><span id="second-span" class="increment-numbers">0</span> Consegne effettuate</p>
@@ -154,7 +160,7 @@
 
     <!--sezione cards-->
 
-    <section class="container-fluid background-lastC my-5 py-5">
+    <section id="regolamento" class="container-fluid background-lastC my-5 py-5">
         <div class="container">
             <div class="row justify-content-evenly">
 
@@ -224,20 +230,20 @@
         <div class="col-12 col-md-4 text-center my-3">
 
           <h4 class="text-secondaryC">Quick Menu</h4>
-          <a href="#animate" class="footer-link"><p>Un pò di numeri</p></a>
-          <a href="#aboutUs" class="footer-link"><p>Recensioni</p></a>
-          <a href="#mouseEnter" class="footer-link"><p>Spedizioni</p></a>
+          <a href="#Informazioni" class="footer-link"><p>Informazioni</p></a>
+          <a href="#aboutUs" class="footer-link"><p>About Us</p></a>
+          <a href="#regolamento" class="footer-link"><p>Regolamento</p></a>
           
         </div>
 
 
         <div class="col-12 col-md-4 text-center my-3">
 
-          <h4 class="text-secondaryC">Collaborazioni</h4>
+          <h4 class="text-secondaryC">Sponsor By</h4>
           <p>Aulab</p>
-          <p>Bartolini</p>
+          <p>DHL</p>
           <p>Amazon</p>
-          <p>Disney</p> 
+          
         
         </div>
 
@@ -274,15 +280,18 @@
       grabCursor: true,
 
       // loop: true,
+
+      breakpoints:900,
+      
       
     });
   </script>
 
 <!--js interno-->
-<script src="./main.js">
+  <script src="./main.js">
 
-</script>
+  </script>
   
-  </body>
+</body>
 
 </html>

@@ -1,0 +1,378 @@
+[
+    {
+        "id":1,
+        "name": "Poster",
+        "category": "Famiglia",
+        "price": "120",
+        "url": "./media/Famiglia.png"
+    },
+
+    {
+        "id": 2,
+        "name": "Tazze per due",
+        "category": "Amore",
+        "price": "200",
+        "url": "./media/amore.png"
+    },
+
+    {
+        "id": 3,
+        "name": "Cuscino a forma di cuore",
+        "category": "Amore",
+        "price": "20.15",
+        "url": "./media/amore.png"
+    },
+
+    {
+        "id": 4,
+        "name": "Puzzle",
+        "category": "Amicizia",
+        "price": "80",
+        "url": "./media/amicizia.png"
+    },
+
+    {
+        "id": 5,
+        "name": "Felpa",
+        "category": "Viaggi",
+        "price": "10.42",
+        "url": "./media/viaggi.png"
+    },
+
+    {
+        "id": 6,
+        "name": "Telo mare",
+        "category": "Viaggi",
+        "price":"64",
+        "url": "./media/viaggi.png"
+    },
+
+    {
+        "id": 7,
+        "name": "Cappello",
+        "category": "Musica",
+        "price":"30.45",
+        "url": "./media/musica.png"
+    },
+
+    {
+        "id": 8,
+        "name": "Tazza grande",
+        "category": "Musica",
+        "price": "15.64",
+        "url": "./media/musica.png"
+    },
+
+    {
+        "id": 9,
+        "name": "Tazza piccola",
+        "category": "Viaggi",
+        "price": "230.42",
+        "url": "./media/viaggi.png"
+    },
+
+    {
+        "id": 10,
+        "name": "T-shirt",
+        "category": "Laurea",
+        "price": "25000.02",
+        "url": "./media/laurea.png"
+    },
+
+    {
+        "id": 11,
+        "name": "Collage",
+        "category": "Matrimonio",
+        "price": "30.12",
+        "url": "./media/matrimonio.png"
+    },
+
+    {
+        "id": 12,
+        "name": "Cornice grande",
+        "category": "Laurea",
+        "price": "55000.54",
+        "url": "./media/laurea.png"
+    },
+
+    {
+        "id": 13,
+        "name": "Cornice piccola",
+        "category": "Matrimonio",
+        "price": "5.23",
+        "url": "./media/matrimonio.png"
+    },
+
+    {
+        "id": 14,
+        "name": "Bavaglino",
+        "category": "Bebé",
+        "price": "70.65",
+        "url": "./media/bebe.png"
+    },
+
+    {
+        "id": 15,
+        "name": "Fotolibro",
+        "category": "Bebé",
+        "price": "2.45",
+        "url": "./media/bebe.png"
+    },
+
+    {
+        "id": 16,
+        "name": "Tela grande",
+        "category": "Festa della Mamma",
+        "price": "300.62",
+        "url": "./media/festaMamma.png"
+    },
+
+    {
+        "id": 17,
+        "name": "Tela grande",
+        "category": "Festa del papà",
+        "price": "120.65",
+        "url": "./media/festaPapa.png"
+    },
+
+    {
+        "id": 18,
+        "name": "Foto magnetica media",
+        "category": "Festa del papà",
+        "price": "12000.13",
+        "url": "./media/festaPapa.png"
+    },
+    
+    {
+        "id": 19,
+        "name": "Polaroid piccola",
+        "category": "Festa del papà",
+        "price": "90.64",
+        "url": "./media/festaPapa.png"
+    },
+
+    {
+        "id": 21,
+        "name": "Guanti invernali",
+        "category": "Famiglia",
+        "price": "22.04",
+        "url": "./media/Famiglia.png"
+    },
+
+    {
+        "id": 22,
+        "name": "Felpa con cappuccio",
+        "category": "Personale",
+        "price": "600.63",
+        "url": "./media/personale.png"
+    },
+
+    {
+        "id": 23,
+        "name": "Sciarpa",
+        "category": "Per Lei",
+        "price": "30.43",
+        "url": "./media/lei.png"
+    },
+
+    {
+        "id": 24,
+        "name": "Set Mini Poster",
+        "category": "Per Lui",
+        "price": "9.93",
+        "url": "./media/lui.png"
+    },
+
+    {
+        "id": 25,
+        "name": "Biglietto 3D",
+        "category": "Musica",
+        "price": "120.93",
+        "url": "./media/musica.png"
+    },
+    
+    {
+        "id": 26,
+        "name": "Biglietto Pieghevole",
+        "category": "Viaggi",
+        "price": "2560.42",
+        "url": "./media/viaggi.png"
+    },
+
+    {
+        "id": 27,
+        "name": "Sottobicchieri",
+        "category": "Festa della Mamma",
+        "price": "4320.43",
+        "url": "./media/festaMamma.png"
+    },
+
+    {
+        "id": 28,
+        "name": "Quadro con cornice in alluminio",
+        "category": "Amore",
+        "price": "2200.63",
+        "url": "./media/amore.png"
+    },
+
+    {
+        "id": 29,
+        "name": "Biglietti Panoramici",
+        "category": "Matrimonio",
+        "price": "55.55",
+        "url": "./media/matrimonio.png"
+    },
+
+    {
+        "id": 30,
+        "name": "Tela Collage",
+        "category": "Famiglia",
+        "price": "210.12",
+        "url": "./media/Famiglia.png"
+    },
+
+    {
+        "id": 31,
+        "name": "Foto incorniciata",
+        "category": "Personale",
+        "price": "5.62",
+        "url": "./media/personale.png"
+    },
+
+    {
+        "id": 32,
+        "name": "Compilation Nino D'Angelo",
+        "category": "Musica",
+        "price": "1.91",
+        "url": "./media/musica.png"
+    },
+
+    {
+        "id": 33,
+        "name": "Biglietti Piccoli",
+        "category": "Compleanno",
+        "price": "1300.41",
+        "url": "./media/compleanno.png"
+    },
+
+    {
+        "id": 34,
+        "name": "Diario Foto",
+        "category": "Viaggi",
+        "price": "25420.40",
+        "url": "./media/viaggi.png"
+    },
+
+    {
+        "id": 35,
+        "name": "Grembiule Personalizzato",
+        "category": "Festa della Mamma",
+        "price": "11.54",
+        "url": "./media/festaMamma.png"
+    },
+
+    {
+        "id": 37,
+        "name": "Coppia di Tovagliette",
+        "category": "Per Lei",
+        "price": "240.33",
+        "url": "./media/lei.png"
+    },
+
+    {
+        "id": 38,
+        "name": "Calendario",
+        "category": "Personale",
+        "price": "420.66",
+        "url": "./media/personale.png"
+    },
+
+    {
+        "id": 39,
+        "name": "Bicchiere Colorato",
+        "category": "Per Lui",
+        "price": "4.43",
+        "url": "./media/lui.png"
+    },
+
+    {
+        "id": 40,
+        "name": "Mini Poster",
+        "category": "Per Lei",
+        "price": "150.65",
+        "url": "./media/lei.png"
+    },
+
+    {
+        "id": 41,
+        "name": "Cuscino Grande",
+        "category": "Musica",
+        "price": "2340.37",
+        "url": "./media/musica.png"
+    },
+
+    {
+        "id": 42,
+        "name": "Fotolibro Vintage",
+        "category": "Viaggi",
+        "price": "13350.73",
+        "url": "./media/viaggi.png"
+    },
+
+    {
+        "id": 43,
+        "name": "Set Polaroid",
+        "category": "Festa del papà",
+        "price": "520.03",
+        "url": "./media/festaPapa.png"
+    },
+
+    {
+        "id": 44,
+        "name": "Ingrandimenti",
+        "category": "Amore",
+        "price": "20000.12",
+        "url": "./media/amore.png"
+    },
+
+    {
+        "id": 45,
+        "name": "Biglietti Rettangolari",
+        "category": "Compleanno",
+        "price": "55.54",
+        "url": "./media/compleanno.png"
+    },
+
+    {
+        "id": 46,
+        "name": "Astuccio",
+        "category": "Personale",
+        "price": "280.54",
+        "url": "./media/personale.png"
+    },
+
+    {
+        "id": 47,
+        "name": "Foto Vintage",
+        "category": "Per Lei",
+        "price": "12000.09",
+        "url": "./media/lei.png"
+    },
+
+    {
+        "id": 48,
+        "name": "Plettro",
+        "category": "Musica",
+        "price": "0.99",
+        "url": "./media/musica.png"
+    },
+
+    {
+        "id": 49,
+        "name": "Modem",
+        "category": "Mimmo",
+        "price": "2.99",
+        "url": "./media/mimmo.png"
+
+    }
+]

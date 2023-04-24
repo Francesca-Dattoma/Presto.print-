@@ -30,6 +30,27 @@ window.addEventListener('scroll', ()=>{
 
 })
 
+//evento brush icona
+let brushIcon = document.querySelector('#brushIcon');
+
+let confirm = false;
+
+brushIcon.addEventListener('click', ()=>{
+
+    if(confirm == false){
+
+        brushIcon.classList.remove('fa-rotate-180'); 
+        confirm = true;
+
+    } else {
+
+        brushIcon.classList.add('fa-rotate-180');
+        confirm = false;
+    }
+   
+})
+
+
 
 /*counter*/
 
